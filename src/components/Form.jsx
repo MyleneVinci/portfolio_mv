@@ -3,7 +3,12 @@ import emailjs from '@emailjs/browser';
 import './form.css';
 
 
+
 const Form = () => {
+
+    const init =() => {
+        emailjs.init(`${process.env.REACT_APP_PUBLIC_KEY}`);
+    };
 
     const refForm = useRef();
 
