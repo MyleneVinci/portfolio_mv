@@ -7,7 +7,7 @@ import './form.css';
 const Form = () => {
 
     const init =() => {
-        emailjs.init(`${process.env.REACT_APP_PUBLIC_KEY}`);
+        emailjs.init(process.env.REACT_APP_PUBLIC_KEY);
     };
 
     const refForm = useRef();
