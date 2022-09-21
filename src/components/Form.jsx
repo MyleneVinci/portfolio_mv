@@ -27,7 +27,7 @@ const Form = () => {
         .then(
             () => {
                 alert('Message envoyé')
-                navigate('/contact')
+                navigate('/')
             },
             () => {
                 alert('Message non envoyé veuillez réessayer')
