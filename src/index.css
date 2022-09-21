@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Asap:wght@400;500;700&family=Fira+Code&family=Marck+Script&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500&family=Saira+Condensed:wght@100;200;300;500&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: black;
+}
+
+h1, h2, h3, h4, p, a, ul {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(248, 217, 15);
+  color: #222;
+  border: 1px solid white;
+  font-weight: 600;
+cursor: pointer;
+}
+
+.disabled-btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(126, 126, 125);
+  color: rgb(94, 91, 91);
+  font-style: italic;
+  border: 1px solid white;
+  font-weight: 600;
+}
+
+.btn-light {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(248, 217, 15);
+  color: #222;
+  border: 1px solid white;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 25, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-light:hover {
+  background: rgba(255, 255, 25, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+
+
