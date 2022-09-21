@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './form.css';
+import { FaWindows } from 'react-icons/fa';
 
 
 
@@ -24,6 +25,7 @@ const Form = () => {
         .then(
             () => {
                 alert('Message envoyé')
+                window.location.reload()
             },
             () => {
                 alert('Message non envoyé veuillez réessayer')
