@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
+import { useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import './form.css';
-import { FaWindows } from 'react-icons/fa';
 
 
 
@@ -10,6 +10,8 @@ const Form = () => {
     const init =() => {
         emailjs.init(process.env.REACT_APP_PUBLIC_KEY);
     };
+
+    const navigate = useNavigate();
 
     const refForm = useRef();
 
@@ -25,7 +27,7 @@ const Form = () => {
         .then(
             () => {
                 alert('Message envoyé')
-                window.location.reload()
+                navigate('/contact')
             },
             () => {
                 alert('Message non envoyé veuillez réessayer')
