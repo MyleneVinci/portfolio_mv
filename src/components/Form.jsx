@@ -24,7 +24,7 @@ const Form = () => {
         .then(
             () => {
                 alert('Message envoyé')
-                window.location.reload(false)
+                window.location.reload()
             },
             () => {
                 alert('Message non envoyé veuillez réessayer')
