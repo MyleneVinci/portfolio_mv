@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import './form.css';
 
@@ -26,11 +27,11 @@ const Form = () => {
         )
         .then(
             () => {
-                alert('Message envoyé')
+                toast.success("Message envoyé")
                 navigate('/')
             },
             () => {
-                alert('Message non envoyé veuillez réessayer')
+                toast.error('Message non envoyé veuillez réessayer svp')
             }
         )
     }
