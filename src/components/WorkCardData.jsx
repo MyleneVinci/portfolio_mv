@@ -61,7 +61,7 @@ const ProjectCardData = [
         imgsrc: loststuffmockup,
         title: "Objets perdus trouvés",
         context:"Projet Personnel",
-        resume: "Platerforme permettant de déclarer des objets perdus ou trouvés et de les localiser sur une carte",
+        resume: "Plateforme permettant de déclarer des objets perdus ou trouvés et de les localiser sur une carte",
         techno1: html ,
         techno2:css,
         techno3:javascript,
